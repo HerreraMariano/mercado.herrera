@@ -3,7 +3,7 @@
     <head class="head">
      <meta charset="UTF-8">
      <meta name="viewport" content="width = device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/css/styles.css">
+     <link rel="stylesheet" href="/css/login.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -52,19 +52,20 @@
     
     
     <main>
-        <form action="login.html" method="post" class="form">
+        <form action="/login" method="post" class="form">
+            <section class="cajaregistro">
+                <p class="h3">Ingresá</p>
+                <div class="line"></div>
            
-             <p>
-            <label for="Nombredeusuari@">Nombre de usuari@:</label>
-            <input type="text" name="Nombredeusuari@" id="Nombredeusuari@">
+         
+            <input class="inputregistro" type="text" name="Nombredeusuari@" id="Nombredeusuari@" placeholder="Nombre de usuari@">
             </input>
-            </p>
+            
+            <input class="inputregistro" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
+            </input>
+            <a href="/home"><button type="submit">INGRESAR</button></a>
            
-             <p>
-            <label for="Contraseña">Contraseña:</label>
-            <input type="password" name="Contraseña" id="Contraseña">
-            </input>
-            </p>
+             </section>
              
             
 

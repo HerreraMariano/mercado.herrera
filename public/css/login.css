@@ -32,7 +32,7 @@ header{
 
 }
 
-input{
+nav input{
     width: 55%;
     margin-left: 5%;
     margin-top: 15%;
@@ -41,6 +41,14 @@ input{
     
     
 }
+nav .busqueda{
+    display: fixed;
+    width: 50%;
+    margin: 20%;
+    position: absolute;
+}
+
+
 .fa-magnifying-glass{
     
     color: #1259c3;
@@ -104,11 +112,11 @@ padding: 5px;
 
 body{
     font-size: 12px;
-    width: 100vw;
+    width: 100%;
     height: 30vh;
     padding: 0%;
     margin: 0% 0%;
-    background-color: #ebebeb;
+    background-color: #ebebebbc;
     
 
     }
@@ -139,117 +147,97 @@ body{
         box-sizing: border-box;
         text-align: center;
         
-        
     }
-    /* ESTE OBJETO MODIFICA EL DISPLAY, los demas no.*/
-    section.contenedor, section.contenedor2{
-         width: 100%;
-        margin-left: 5%; 
-         display: flex;
-         justify-content: space-around;
-         flex-wrap: wrap;
-    }
-    /* PUEDE MODIFICAR LOS ARTICLES EN ESPECIFICO*/
-    .contenedor article, .contenedor2 article{
-        
-        width: 50%;
-        margin-bottom: 3%;
-        padding: 0%;
-        background-color: white;
-        border-radius: 5px;
-        
-        }
-    .contenedor .img, .contenedor2 .img{
-        width: 100% ;
-        text-align: center;
-        border-radius: 5px;
-        
-        }
-        .img{
-            width: 100%;
-            padding-bottom: 3px;
-            background-color: #ebebeb;
-        }
-        .hover:hover{
-            background-color: #ebebeb;
-            
-            scale: 1.2;
-        }
-      
     
-    .fa-truck{
-        
-        color:#39b54a;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: relative;
-        right: 20px;
-        top: -17px;
-        left: 35%;
-        animation: none;
 
-    }
-    article:hover .fa-truck{
-        animation: rotar 2.2s infinite alternate;
-
-
-    }
-    @keyframes rotar{
-        0%{
-            transform: none;
-        }
-        100%{
-            transform: rotate(-90deg);
-        }
-    }
-    /* titulares*/
-    main h3{
-        font-size: 24px;
-        color: #666;
-        text-align: center;
-        margin: 7% 0% 8% 6%;
-        
-    }
-    /* descripcion producto*/
-    article, .descripcion{
-        text-align: center;
-         width: 100%;
-         font-size: 14px;
-         margin-bottom: 10px;
-         color:#666;
-    }
-    /* precios*/
-    article .h4{
-        font-size: 16px;
-        width: 15%;
-        color: black;
-        
-        margin-left: 4%;
-        
-        }
-    article .descuento{
-        color: #39b54a;
-        font-size: 16px;
-        width: 45%;
-        text-align: center;
-        
-        }
-        article div{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+        .cajaregistro{
+            background-color:#dddbdb;
+            border-radius: 25px 25px 60px 60px;
+            box-shadow: 0px 0px 10px #2466ca;
+            width: 60%;
+            margin-top: 0%;
+            margin-bottom: 5%;
+            margin-left: 30%;
+            margin-right: 0;
+           
+            
             
         }
- 
-    .alineacion{
+        .inputregistro{
+            width: 50%;
+            height: 30px;
+            margin-left: 5%;
+            margin-top: 7%;
+            border: none;
+            color: white;
+            border-radius: 10px 9px 10px 9px;
+            box-shadow: 0px 0px 10px #666666e7;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
         
-        justify-content: space-between;
-    }
+            
+        }
+        button{
+            width: 14%;
+            height: 30px;
+            margin: 17%;
+            margin-left: 25%;
+            margin-top: 7%;
+            margin-bottom: 2%;
+            border: none;
+            color: black;
+            box-shadow: 0px 0px 10px #737272b2;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            border-bottom: solid 7px #e4c425;
+            border-radius: 9px 9px 4px 4px;
+        }
+       main .h3{
+            font-size: 28px;
+            color:rgba(0, 0, 0, 0.931);
+            text-align: center;
+            margin-right: 10%;
+            background-color:#236ddbd3;
+            border-radius: 0px 0px 5px 5px;
+            border-bottom: solid 1px #19c0f3;
+            box-shadow: 0px 0px 7px #19c0f3d2;
+            width: 80%;
+            margin: 10% 10% 5% 10%;
+            text-shadow: #3d3d3d;
+
+        }
+        .line{
+            
+            width: 100%;
+            border-bottom: solid 14px #e4c425;
+            border-radius: 7px 7px 8px 8px;
+            
+        }
+        .seleccionperfil{
+            width: 90%;
+            border-radius: 0;
+            
+            margin-left: 5%;
+            margin-top: 5%;
+            
+            
+            padding: 10px;
+           
+            
+        }
+        .categorias{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px;
+            padding-left: 25%;
+
+        
+        }
+
+
     
     /* FOOTER */
     footer{
@@ -324,10 +312,7 @@ body{
           ul.section2{
             display: none;
           }
-          .contenedor article, .contenedor2 article{
-            width: 45%;
-            
-          }
+         
           .section1{
             display: none;
             
@@ -341,10 +326,7 @@ body{
          ul.section2{
            display: none;
          }
-         .contenedor article, .contenedor2 article{
-           width: 30%;
-           
-         }
+         
          .section1{
             width: 100%;
            display: flex;
@@ -376,10 +358,7 @@ body{
             justify-content: space-between;
             text-align: right;
            }
-           .contenedor article, .contenedor2 article{
-            width: 22%;
-            
-          }
+          
           .section1{
             align-items: right;
             width: 100%;
@@ -390,14 +369,9 @@ body{
           .section1b{
             display: none;
           }
-          section article{
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }
-        .contenedor .hover:hover{
-            background-color: #ebebeb;
-            top: 10px;
-            bottom: -10px;
-        }
+          
+       
+        
     }
     
     

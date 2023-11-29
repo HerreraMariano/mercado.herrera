@@ -3,13 +3,13 @@
     <head class="head">
      <meta charset="UTF-8">
      <meta name="viewport" content="width = device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/css/styles.css">
+     <link rel="stylesheet" href="/css/registro.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/888d1f7b84.js" crossorigin="anonymous"></script>
      
-     <title> Mercado Liebre </title>
+     <title> Registrate </title>
 
     </head>
     <body>
@@ -18,7 +18,7 @@
      <div> <img src="/images/logo-mercado-liebre.svg" alt="logo de la empresa", class="logo-img"> </div>
     
         <nav class="busqueda"><div>
-         <input type="text", placeholder="buscar...">
+         <input type="text", placeholder="buscar..."></input>
          <i class="fa-solid fa-magnifying-glass"></i>
         </div></nav>
         <p class="section1"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en Cuotas y Sin Tarjeta de Crédito</p>
@@ -52,40 +52,40 @@
     
     
     <main>
-        <form action="registro.html" method="post" class="form">
-            <p>
-            <label for="nombreyapellido">Nombre y apellido:</label>
-            <input type="text" name="nombreyapellido" id="nombreyapellido">
+        
+        <form action="/registro" method="post" class="form" name="registro">
+            <section class="cajaregistro">
+                <p class="h3">Creá tu cuenta <i class="fa-regular fa-id-card"></i></p>
+                <div class="line"></div>
+            
+            
+            <input class="inputregistro" type="text" name="registro" id="nombreyapellido" placeholder="Nombre y apellido" required>
             </input>
-            </p>
-             <p>
-            <label for="Nombredeusuari@">Nombre de usuari@:</label>
-            <input type="text" name="Nombredeusuari@" id="Nombredeusuari@">
+            
+            
+            
+            <input class="inputregistro" type="text" name="registro" id="Nombredeusuari@" placeholder="Nombre de usuari@" required>
+            </input>-
+            
+            
+            <input class="inputregistro" type="Email" name="registro" id="Email" placeholder="Email" required>
             </input>
-            </p>
-             <p>
-            <label for="Email">Email:</label>
-            <input type="Email" name="Email" id="Email">
+           
+           
+            <input class="inputregistro" type="text" name="registro" id="date" placeholder="Fecha de nacimiento" required>
             </input>
-            </p>
-             <p>
-            <label for="date">Fecha de nacimiento:</label>
-            <input type="text" name="date" id="date">
+           
+            
+            <input class="inputregistro" type="text" name="registro" id="Domicilio" placeholder="Domicilio" required>
             </input>
-            </p>
-             <p>
-            <label for="Domicilio">Domicilio:</label>
-            <input type="text" name="Domicilio" id="Domicilio">
-            </input>
-            </p>
-             <p>
-            <label for="PerfilDelUsuario" class="seleccionperfil">PerfilDelUsuario:
+            
+            <section class="seleccionperfil" name="registro">
             <input type="radio" name="PerfilDelUsuario" value="comprador">comprador</input>
             <input type="radio" name="PerfilDelUsuario" value="vendedor">vendedor</input>
-            </label>
-            </p>
-             <p>
-            <label for="CategoriasInteres">Categorías de interés:
+            
+            
+             
+            <label name="registro" class="categorias">Categorías de interés:
             
              <input type="checkbox" name="CategoriasInteres" value="Electro">Electro</input>
              <input type="checkbox" name="CategoriasInteres" value="Moda">Moda</input>
@@ -93,37 +93,36 @@
              <input type="checkbox" name="CategoriasInteres" value="Juguetería">Juguetería</input>
              <input type="checkbox" name="CategoriasInteres" value="Vida sana">Vida sana</input>
              </label>
-            </p>
-            <p>
-            <label for="Foto de usuario">Foto de usuario:</label>
-            <input type="file" name="avatar" accept=".jpg">
+            
+            
+            <label>Foto de usuario:</label>
+            <input type="file" name="registro" accept=".jpg" placeholder="Foto de usuario">
             </input>
-            </p>
-             <p>
-            <label for="Contraseña">Contraseña:</label>
-            <input type="password" name="Contraseña" id="Contraseña">
+           </section>
+           
+           
+            <input class="inputregistro" type="password" name="registro" id="Contraseña" placeholder="Contraseña" required>
             </input>
-            </p>
-             <p>
-            <label for="Confirmar Contraseña">Confirmar Contraseña:</label>
-            <input type="password" name="Confirmar Contraseña" id="Confirmar Contraseña">
+           
+            
+            <input class="inputregistro" type="password" name="registro" id="Confirmar Contraseña" placeholder="Confirma Contraseña" required>
             </input>
-            </p>
-            <section class="botones">
-            <p>
-            <button type="submit">ENVIAR</button>
-            </p>
-            <p>
+            
+            <section class="botones" >
+            
+            <a href="home.html"><button type="submit">ENVIAR</button></a>
+            
             <button type="reset">BORRAR</button>
-            </p>
+            
             </section>
+         </section>
 
             
-
+ 
         </form>
         
 
-</main>
+    </main>
 <footer>
     <section class="ali-footer">
     <section class="tarjeta">
